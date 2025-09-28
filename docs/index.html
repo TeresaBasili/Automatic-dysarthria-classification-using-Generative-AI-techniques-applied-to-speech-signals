@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,22 +12,25 @@
         h2 {
             color: #2c3e50;
         }
-        h3 {
-            margin-bottom: 5px;
-        }
         .audio-container {
             background-color: #fff;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .audio-container audio {
-            display: block;
-            margin: 5px 0;
-        }
-        .label {
+        .audio-label {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
             font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        audio {
+            display: block;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -41,12 +42,12 @@
 
     <div class="audio-container">
         <h3>YOU WISHED TO KNOW ALL ABOUT MY GRANDFATHER (TORGO phrase)</h3>
-        <div class="label">Original:</div>
+        <div class="audio-label">Original</div>
         <audio controls>
             <source src="sample1_original.wav" type="audio/wav">
             Your browser does not support the audio element.
         </audio>
-        <div class="label">Synthetic (Grad-TTS):</div>
+        <div class="audio-label">Synthetic (Grad-TTS)</div>
         <audio controls>
             <source src="sample1_synth.wav" type="audio/wav">
             Your browser does not support the audio element.
@@ -55,12 +56,12 @@
 
     <div class="audio-container">
         <h3>SWORE (TORGO word)</h3>
-        <div class="label">Original:</div>
+        <div class="audio-label">Original</div>
         <audio controls>
             <source src="sample2_original.wav" type="audio/wav">
             Your browser does not support the audio element.
         </audio>
-        <div class="label">Synthetic (Grad-TTS):</div>
+        <div class="audio-label">Synthetic (Grad-TTS)</div>
         <audio controls>
             <source src="sample2_synth.wav" type="audio/wav">
             Your browser does not support the audio element.
@@ -71,6 +72,7 @@
 
     <div class="audio-container">
         <h3>southeast (UA-Speech word)</h3>
+        <div class="audio-label">Original</div>
         <audio controls>
             <source src="sample3.wav" type="audio/wav">
             Your browser does not support the audio element.
