@@ -1,11 +1,81 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Audio samples generated using Grad-TTS</title></head>
+<head>
+    <meta charset="utf-8">
+    <title>Audio samples generated using Grad-TTS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        h3 {
+            margin-bottom: 5px;
+        }
+        .audio-container {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .audio-container audio {
+            display: block;
+            margin: 5px 0;
+        }
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
 <body>
-  <h2>Audio samples generated using Grad-TTS</h2>
-  <h2>TORGO_F01</h2>
-  <div><h3>YOU WISHED TO KNOW ALL ABOUT MY GRANDFATHER (TORGO phrase)</h3><audio controls><source src="sample1.wav" type="audio/wav"></audio><audio controls><source src="sample1.wav" type="audio/wav"></audio></div>
-  <div><h3>SWORE (TORGO word)</h3><audio controls><source src="sample2.wav" type="audio/wav"></audio></div><audio controls><source src="sample2.wav" type="audio/wav"></audio></div>
-  <div><h3>southeast (UA-Speech word)</h3><audio controls><source src="sample2.wav" type="audio/wav"></audio></div>
+
+    <h2>Audio samples generated using Grad-TTS</h2>
+
+    <h2>TORGO_F01</h2>
+
+    <div class="audio-container">
+        <h3>YOU WISHED TO KNOW ALL ABOUT MY GRANDFATHER (TORGO phrase)</h3>
+        <div class="label">Original:</div>
+        <audio controls>
+            <source src="sample1_original.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="label">Synthetic (Grad-TTS):</div>
+        <audio controls>
+            <source src="sample1_synth.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="audio-container">
+        <h3>SWORE (TORGO word)</h3>
+        <div class="label">Original:</div>
+        <audio controls>
+            <source src="sample2_original.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="label">Synthetic (Grad-TTS):</div>
+        <audio controls>
+            <source src="sample2_synth.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <h2>UA-Speech</h2>
+
+    <div class="audio-container">
+        <h3>southeast (UA-Speech word)</h3>
+        <audio controls>
+            <source src="sample3.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
 </body>
 </html>
